@@ -18,4 +18,7 @@ public class HomeController {
         return "welcome";
     }
 
+    @GetMapping("/home")
+    public @ResponseBody String dashboardMessage(){ return ("welcome to the dashboard");}
+
 }
